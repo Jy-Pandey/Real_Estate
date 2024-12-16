@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.container{
+    /* background-color: #f5383890; */
+    width: 95%;
+    margin: auto;
+}
+
+.link{
+    /* transition: all 3s linear 1s; */
+    position: relative;
+
+    &::before{
+        content:"";
+        position :absolute;
+        height: 100%;
+        width: 0%;
+        border-bottom: 2px solid black;
+        border-color: rgb(227, 79, 79);
+        transition: all 0.3s linear;
+        
+    }
+}
+.link:hover::before{
+    width: 100%;
+}
